@@ -6,4 +6,4 @@ Basically, this is a tool that preserves the size of plankton in IFCB images by 
 
 To use this program, simply download the .py file from the latest release and have SciPy, Pillow and NumPy (version 1.26.4) installed via pip, which can easily be done via the attached batch file. For instructions, input `python ifcb_image_panner.py --help` into Command Prompt.
 
-![alt text](https://github.com/htleblond/ifcb_image_panner/blob/main/ifcb_image_panning_example.png)
+![alt text](https://github.com/htleblond/ifcb_image_panner/blob/main/ifcb_image_panning_example_2.png)
