@@ -1,0 +1,15 @@
+ifcb_image_panner.py CHANGELOG
+Holly LeBlond
+Fisheries and Oceans Canada
+
+1.02a (June 13th, 2025)
+- process_image will now output multiple images by "hopping" (default value is 0.8 times desired_size) from the initial crop found the previous way. Any crop whose standard deviation of the pixel values passes a certain threshold (default is 20) and has a dimension greater than desired_size times a specified scalar (default is 0.35) will be output. This includes corners and edges.
+- The "best" pan is determined by which image has the highest standard deviation of pixel values, as opposed to the mean of the absolute values.
+- Added option to only output the "best" crop.
+- Added option to disable print statements.
+- Default desired_size changed to 299 (for Inception models).
+- Output images now have an extra ID number in their file names, and also include a tag describing which piece of the original image they came from.
+- Improved time complexity for the padding algorithm.
+
+1.01a (June 9th, 2025)
+- Initial release.
